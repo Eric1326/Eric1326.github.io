@@ -3,7 +3,7 @@ import { List, Card } from 'antd';
 import moment from 'moment';
 import { connect } from 'dva';
 import AvatarList from '@/components/AvatarList';
-import stylesProjects from '../../List/Projects.less';
+import styles from './Projects.less';
 
 @connect(({ list }) => ({
   list,
@@ -15,21 +15,21 @@ class Center extends PureComponent {
     } = this.props;
     return (
       <List
-        className={stylesProjects.coverCardList}
+        className={styles.coverCardList}
         rowKey="id"
         grid={{ gutter: 24, xxl: 3, xl: 2, lg: 2, md: 2, sm: 2, xs: 1 }}
         dataSource={list}
         renderItem={item => (
           <List.Item>
             <Card
-              className={stylesProjects.card}
+              className={styles.card}
               hoverable
               cover={<img alt={item.title} src={item.cover} />}
             >
               <Card.Meta title={<a>{item.title}</a>} description={item.subDescription} />
-              <div className={stylesProjects.cardItemContent}>
+              <div className={styles.cardItemContent}>
                 <span>{moment(item.updatedAt).fromNow()}</span>
-                <div className={stylesProjects.avatarList}>
+                <div className={styles.avatarList}>
                   <AvatarList size="mini">
                     {item.members.map(member => (
                       <AvatarList.Item

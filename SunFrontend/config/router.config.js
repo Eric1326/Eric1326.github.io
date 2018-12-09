@@ -50,57 +50,13 @@ export default [
       //   ],
       // },
       
-      // list
+      // articles
       {
-        path: '/Articles',
+        path: '/articles',
         icon: 'table',
-        name: 'Articles',
-        component: './List/Articles',
+        name: 'articles',
+        component: './Articles/Articles',
       },
-        // routes: [
-          // {
-          //   path: '/list/table-list',
-          //   name: 'searchtable',
-          //   component: './List/TableList',
-          // },
-          // {
-          //   path: '/list/basic-list',
-          //   name: 'basiclist',
-          //   component: './List/BasicList',
-          // },
-          // {
-          //   path: '/list/card-list',
-          //   name: 'cardlist',
-          //   component: './List/CardList',
-          // },
-          // {
-          //   path: '/list/search',
-          //   name: 'searchlist',
-          //   component: './List/List',
-          //   routes: [
-              // {
-              //   path: '/list/search',
-              //   redirect: '/list/search/articles',
-              // },
-              // {
-              //   path: '/list/search/articles',
-              //   name: 'articles',
-              //   component: './List/Articles',
-              // },
-              // {
-              //   path: '/list/search/projects',
-              //   name: 'projects',
-              //   component: './List/Projects',
-              // },
-              // {
-              //   path: '/list/search/applications',
-              //   name: 'applications',
-              //   component: './List/Applications',
-              // },
-            // ],
-          // },
-        // ],
-      // },
       {
         path: '/profile',
         name: 'profile',
