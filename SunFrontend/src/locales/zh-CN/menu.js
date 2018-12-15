@@ -1,7 +1,10 @@
 export default {
   // 'menu.home': '首页',
-  'menu.homePage': '首页',
-  'menu.articles': '文章',
+  // 'menu.homePage': '首页',
+  'menu.articles': '首页',
+  'menu.article': '文章详情',
+  'menu.tags': '标签页',
+  'menu.tagArticle': '标签下文章',
   // 'menu.dashboard': 'Dashboard',
   // 'menu.dashboard.analysis': '分析页',
   // 'menu.dashboard.monitor': '监控页',

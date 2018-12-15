@@ -3,7 +3,7 @@ import { formatMessage } from 'umi/locale';
 import Link from 'umi/link';
 import { Icon } from 'antd';
 import GlobalFooter from '@/components/GlobalFooter';
-import SelectLang from '@/components/SelectLang';
+// import SelectLang from '@/components/SelectLang';
 import styles from './UserLayout.less';
 import logo from '../assets/logo.svg';
 
@@ -49,7 +49,7 @@ class UserLayout extends React.PureComponent {
       // @TODO <DocumentTitle title={this.getPageTitle()}>
       <div className={styles.container}>
         <div className={styles.lang}>
-          <SelectLang />
+          {/* <SelectLang /> */}
         </div>
         <div className={styles.content}>
           <div className={styles.top}>

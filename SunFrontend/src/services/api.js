@@ -124,3 +124,19 @@ export async function queryNotices() {
 export async function getFakeCaptcha(mobile) {
   return request(`/api/captcha?mobile=${mobile}`);
 }
+
+export async function getArticleList(params) {
+  return request(`/api/articleList?${stringify(params)}`);
+}
+
+export async function getArticle(params) {
+  return request(`/api/article?${stringify(params)}`);
+}
+
+export async function getTags(params) {
+  return request(`/api/tags?${stringify(params)}`);
+}
+
+export async function getTagArticle(params) {
+  return request(`/api/tagArticle?${stringify(params)}`);
+}
